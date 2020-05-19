@@ -1,0 +1,95 @@
+~~ Image Divs ~~
+
+topPostImageDiv => holds image element for top post
+	- should be bigger than other images
+	- size is dictated by container tho so this could be same for all of the posts
+css:
+.topPostImageDiv {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin: auto;
+}
+
+next3PostImageDiv => holds image for next 3 post images
+css:
+.next3PostImageDiv {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+postImageDiv => holds image for regular posts
+	- size should be set here because regular posts have following text rather than below text
+css:
+.postImageDiv{
+  width: 20vw;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+
+~~ Images ~~
+
+topPostImage => Image for top post
+css:
+.topPostImage {
+  width:100%;
+  max-width: 100%;
+}
+
+next3PostImage => Image for a next 3 post
+css:
+.next3PostImage {
+  width: 100%;
+  max-width: 100%;
+}
+
+postImage => Image for a regular post
+css:
+.postImage {
+  width: 100%;
+  max-width: 100%;
+}
+
+~~ new image div class heirarchy ~~
+
+.topPostImageDiv {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.next3PostImageDiv {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.postImageDiv{
+  width: 20vw;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+
+~~~~~~~~~~~
+
+.postImageDiv {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.postImageDiv.regularImageDiv {
+    width: 20vw;
+}
+
+~~ new image class ~~
+
+.postImage {
+    width:100%;
+    max-width: 100%;
+}
+
+~~~~~~~~~~~~

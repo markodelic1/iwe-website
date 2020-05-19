@@ -1,0 +1,142 @@
+
+~~ Containers ~~
+
+Top1PostContainer => this is a containing div for the top post, it holds the delete button, the picture and the text
+	- picture must be larger than other post pictures
+	- delete button can be the same
+	- post text can be the same but bigger/smaller as wished
+css:
+.top1PostContainer {
+  width: 60vw;
+  margin: auto;
+  position: relative; 
+}
+
+
+next3Container => this contains next three top posts
+	- length spans most of the content block width
+	- Has own formatting so should be unique class
+css:
+.next3Container {
+  display: flex; 
+  border-top: solid lightgrey;
+  border-bottom: solid lightgrey;
+}
+
+postListDiv => contains all the posts after the top 4
+	- length spans whole content block
+	- has own formatting
+css:
+.postListDiv {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+~~ Post Divs ~~
+
+Top1PostContainer => this is a containing div for the top post, it holds the delete button, the picture and the text
+	- picture must be larger than other post pictures
+	- delete button can be the same
+	- post text can be the same but bigger/smaller as wished
+css:
+.top1PostContainer {
+  width: 60vw;
+  margin: auto;
+  position: relative; 
+}
+
+
+next3PostDiv => this contains a single one of the next top three posts
+	- pictures are same size for each but bigger than regular post pictures (maybe same?)
+	- text can be same but might wanna make them bigger
+	- deleter should be same
+css:
+.next3PostDiv {
+  margin: 2%;
+  width: 33%; 
+}
+
+postContainer => holds a regular post
+	- pictures are same size
+	- text can be same size as next 3 posts (probs not tho)
+	- deleter is same
+css:
+.postContainer {
+  margin: auto;
+  width: 80vw;
+  position: relative;
+  display: flex;
+}
+
+
+~~~~~~~~~~~~~
+
+.top1PostContainer {
+  width: 60vw;
+  margin: auto;
+}
+
+.next3Container {
+  display: flex; 
+  border-top: solid lightgrey;
+  border-bottom: solid lightgrey;
+}
+.postListDiv {
+  flex-wrap: wrap;
+}
+
+~~ new container heirarchy ~~
+
+.postContainer {}
+
+.postContainer.top1 {
+  width: 60vw;
+  margin: auto;
+}
+
+.postContainer.next3 {
+  display: flex; 
+  border-top: solid lightgrey;
+  border-bottom: solid lightgrey;
+}
+
+.postContainer.regular {
+  flex-wrap: wrap;
+}
+
+~~~~~~~~~~~~
+
+.top1PostContainer {
+  width: 60vw;
+  margin: auto;
+}
+
+.next3PostDiv {
+  margin: 2%;
+  width: 33%; 
+}
+
+.postContainer {
+  display: flex;
+}
+
+~~ New Post Div heirarchy ~~
+
+.postDiv {
+
+}
+
+.postDiv.top1 {
+  width: 60vw;
+  margin: auto;
+}
+
+.postDiv.next3 {
+  margin: 2%;
+  width: 33%;
+}
+
+.postDiv.regular {
+  display: flex;
+}

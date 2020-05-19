@@ -1,0 +1,105 @@
+
+~~ Text containers ~~
+
+topPostTextDiv => holds text element for top post
+	- text should be bigger
+	- length should span post width with potential for starting new lines as needed
+css:
+.topPostTextDiv {
+  width: 100%;
+  margin: auto;
+}
+
+postTextDiv => used for next 3 posts
+	- next 3 should have bigger text and length should span post width
+css: 
+.postTextDiv {
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 1px 10px 1px 10px;
+}
+
+post1TextDiv => used for regular posts
+	- regular posts should have smaller text and length should span rest of content block after image
+css:
+.post1TextDiv {
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0;
+  width: 80%;
+  padding: 1px 10px 1px 10px;
+}
+
+~~ text ~~
+
+topPostText => holds actual text for post
+	- should be bigger
+css:
+.topPostText {
+  font-size: 1em; /* should change to better size */
+}
+
+postText => holds actual text for next 3 post elements
+	- should be slightly bigger than regular posts
+css:
+.postText {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-family: Roboto, sans-serif, Verdana, "Arial";
+  font-size: larger;
+  margin: 5px;
+  margin: auto;
+}
+
+post1Text => holds actual text for regular posts
+	- should be smallest of the three
+	- all text on webpage should be same font family
+css:
+.post1Text {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-family: Roboto, sans-serif, Verdana, "Arial";
+  font-size: larger;
+  margin: 5px;
+}
+
+~~~~~~~~~~~~~
+
+.topPostTextDiv {
+  width: 100%;
+  margin: auto;
+}
+
+.postTextDiv {
+  width: 100%;
+}
+
+.post1TextDiv {
+  width: 80%;
+}
+
+~~ new text div class ~~
+
+.postTextDiv {
+    width:100%
+}
+
+~~~~~~~~~~~~~
+
+.topPostText {
+}
+
+.postText {
+  font-family: Roboto, sans-serif, Verdana, "Arial";
+}
+
+.post1Text {
+  font-family: Roboto, sans-serif, Verdana, "Arial";
+}
+
+~~ New Post Text ~~
+
+.postText {
+  font-family: Roboto, sans-serif, Verdana, "Arial";
+}
